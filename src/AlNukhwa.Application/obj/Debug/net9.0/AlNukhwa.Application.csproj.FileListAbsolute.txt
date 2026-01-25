@@ -1,0 +1,13 @@
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\bin\Debug\net9.0\AlNukhwa.Application.deps.json
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\bin\Debug\net9.0\AlNukhwa.Application.dll
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\bin\Debug\net9.0\AlNukhwa.Application.pdb
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\AlNukhwa.Application.csproj.AssemblyReference.cache
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\AlNukhwa.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\AlNukhwa.Application.AssemblyInfoInputs.cache
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\AlNukhwa.Application.AssemblyInfo.cs
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\AlNukhwa.Application.csproj.CoreCompileInputs.cache
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\AlNukhwa.Application.sourcelink.json
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\AlNukhwa.Application.dll
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\refint\AlNukhwa.Application.dll
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\AlNukhwa.Application.pdb
+E:\HamidTech_Ventures\My_products\AlNukhwa.Backend\src\AlNukhwa.Application\obj\Debug\net9.0\ref\AlNukhwa.Application.dll
