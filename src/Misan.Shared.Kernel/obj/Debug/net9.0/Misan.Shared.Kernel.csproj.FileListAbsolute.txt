@@ -1,0 +1,13 @@
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\bin\Debug\net9.0\Misan.Shared.Kernel.deps.json
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\bin\Debug\net9.0\Misan.Shared.Kernel.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\bin\Debug\net9.0\Misan.Shared.Kernel.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\Misan.Shared.Kernel.csproj.AssemblyReference.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\Misan.Shared.Kernel.GeneratedMSBuildEditorConfig.editorconfig
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\Misan.Shared.Kernel.AssemblyInfoInputs.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\Misan.Shared.Kernel.AssemblyInfo.cs
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\Misan.Shared.Kernel.csproj.CoreCompileInputs.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\Misan.Shared.Kernel.sourcelink.json
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\Misan.Shared.Kernel.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\refint\Misan.Shared.Kernel.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\Misan.Shared.Kernel.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Shared.Kernel\obj\Debug\net9.0\ref\Misan.Shared.Kernel.dll

@@ -1,0 +1,16 @@
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Modules.Intelligence.GeneratedMSBuildEditorConfig.editorconfig
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Modules.Intelligence.AssemblyInfoInputs.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Modules.Intelligence.AssemblyInfo.cs
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Modules.Intelligence.csproj.CoreCompileInputs.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Modules.Intelligence.sourcelink.json
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Modules.Intelligence.csproj.AssemblyReference.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\bin\Debug\net9.0\Misan.Modules.Intelligence.deps.json
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\bin\Debug\net9.0\Misan.Modules.Intelligence.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\bin\Debug\net9.0\Misan.Modules.Intelligence.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\bin\Debug\net9.0\Misan.Shared.Kernel.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\bin\Debug\net9.0\Misan.Shared.Kernel.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Mo.F409773C.Up2Date
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Modules.Intelligence.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\refint\Misan.Modules.Intelligence.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\Misan.Modules.Intelligence.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Intelligence\obj\Debug\net9.0\ref\Misan.Modules.Intelligence.dll

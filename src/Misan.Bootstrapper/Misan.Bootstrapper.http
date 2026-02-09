@@ -1,0 +1,6 @@
+@Misan.Bootstrapper_HostAddress = http://localhost:5005
+
+GET {{Misan.Bootstrapper_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

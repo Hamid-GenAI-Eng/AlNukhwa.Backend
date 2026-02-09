@@ -1,0 +1,16 @@
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\bin\Debug\net9.0\Misan.Modules.Practitioner.deps.json
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\bin\Debug\net9.0\Misan.Modules.Practitioner.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\bin\Debug\net9.0\Misan.Modules.Practitioner.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\bin\Debug\net9.0\Misan.Shared.Kernel.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\bin\Debug\net9.0\Misan.Shared.Kernel.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Modules.Practitioner.csproj.AssemblyReference.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Modules.Practitioner.GeneratedMSBuildEditorConfig.editorconfig
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Modules.Practitioner.AssemblyInfoInputs.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Modules.Practitioner.AssemblyInfo.cs
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Modules.Practitioner.csproj.CoreCompileInputs.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Modules.Practitioner.sourcelink.json
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Mo.6E7AA4FF.Up2Date
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Modules.Practitioner.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\refint\Misan.Modules.Practitioner.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\Misan.Modules.Practitioner.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Practitioner\obj\Debug\net9.0\ref\Misan.Modules.Practitioner.dll

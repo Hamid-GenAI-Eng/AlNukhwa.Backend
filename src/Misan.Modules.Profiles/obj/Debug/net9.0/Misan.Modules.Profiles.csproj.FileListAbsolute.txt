@@ -1,0 +1,16 @@
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\bin\Debug\net9.0\Misan.Modules.Profiles.deps.json
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\bin\Debug\net9.0\Misan.Modules.Profiles.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\bin\Debug\net9.0\Misan.Modules.Profiles.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\bin\Debug\net9.0\Misan.Shared.Kernel.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\bin\Debug\net9.0\Misan.Shared.Kernel.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Modules.Profiles.csproj.AssemblyReference.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Modules.Profiles.GeneratedMSBuildEditorConfig.editorconfig
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Modules.Profiles.AssemblyInfoInputs.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Modules.Profiles.AssemblyInfo.cs
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Modules.Profiles.csproj.CoreCompileInputs.cache
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Modules.Profiles.sourcelink.json
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Mo.98D900A0.Up2Date
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Modules.Profiles.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\refint\Misan.Modules.Profiles.dll
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\Misan.Modules.Profiles.pdb
+E:\HamidTech_Ventures\My_products\Al-Nukhwa\AlNukhwa.Backend\src\Misan.Modules.Profiles\obj\Debug\net9.0\ref\Misan.Modules.Profiles.dll

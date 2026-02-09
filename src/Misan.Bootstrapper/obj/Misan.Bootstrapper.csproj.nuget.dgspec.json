@@ -1,0 +1,673 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Bootstrapper\\Misan.Bootstrapper.csproj": {}
+  },
+  "projects": {
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Bootstrapper\\Misan.Bootstrapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Bootstrapper\\Misan.Bootstrapper.csproj",
+        "projectName": "Misan.Bootstrapper",
+        "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Bootstrapper\\Misan.Bootstrapper.csproj",
+        "packagesPath": "C:\\Users\\110\\.nuget\\packages\\",
+        "outputPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Bootstrapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\110\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Clinical\\Misan.Modules.Clinical.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Clinical\\Misan.Modules.Clinical.csproj"
+              },
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Identity\\Misan.Modules.Identity.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Identity\\Misan.Modules.Identity.csproj"
+              },
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Intelligence\\Misan.Modules.Intelligence.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Intelligence\\Misan.Modules.Intelligence.csproj"
+              },
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Practitioner\\Misan.Modules.Practitioner.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Practitioner\\Misan.Modules.Practitioner.csproj"
+              },
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Profiles\\Misan.Modules.Profiles.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Profiles\\Misan.Modules.Profiles.csproj"
+              },
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Store\\Misan.Modules.Store.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Store\\Misan.Modules.Store.csproj"
+              },
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Clinical\\Misan.Modules.Clinical.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Clinical\\Misan.Modules.Clinical.csproj",
+        "projectName": "Misan.Modules.Clinical",
+        "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Clinical\\Misan.Modules.Clinical.csproj",
+        "packagesPath": "C:\\Users\\110\\.nuget\\packages\\",
+        "outputPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Clinical\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\110\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2023.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Identity\\Misan.Modules.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Identity\\Misan.Modules.Identity.csproj",
+        "projectName": "Misan.Modules.Identity",
+        "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Identity\\Misan.Modules.Identity.csproj",
+        "packagesPath": "C:\\Users\\110\\.nuget\\packages\\",
+        "outputPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\110\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Intelligence\\Misan.Modules.Intelligence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Intelligence\\Misan.Modules.Intelligence.csproj",
+        "projectName": "Misan.Modules.Intelligence",
+        "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Intelligence\\Misan.Modules.Intelligence.csproj",
+        "packagesPath": "C:\\Users\\110\\.nuget\\packages\\",
+        "outputPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Intelligence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\110\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Practitioner\\Misan.Modules.Practitioner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Practitioner\\Misan.Modules.Practitioner.csproj",
+        "projectName": "Misan.Modules.Practitioner",
+        "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Practitioner\\Misan.Modules.Practitioner.csproj",
+        "packagesPath": "C:\\Users\\110\\.nuget\\packages\\",
+        "outputPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Practitioner\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\110\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Profiles\\Misan.Modules.Profiles.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Profiles\\Misan.Modules.Profiles.csproj",
+        "projectName": "Misan.Modules.Profiles",
+        "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Profiles\\Misan.Modules.Profiles.csproj",
+        "packagesPath": "C:\\Users\\110\\.nuget\\packages\\",
+        "outputPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Profiles\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\110\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.28.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Store\\Misan.Modules.Store.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Store\\Misan.Modules.Store.csproj",
+        "projectName": "Misan.Modules.Store",
+        "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Store\\Misan.Modules.Store.csproj",
+        "packagesPath": "C:\\Users\\110\\.nuget\\packages\\",
+        "outputPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Modules.Store\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\110\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj": {
+                "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj",
+        "projectName": "Misan.Shared.Kernel",
+        "projectPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\Misan.Shared.Kernel.csproj",
+        "packagesPath": "C:\\Users\\110\\.nuget\\packages\\",
+        "outputPath": "E:\\HamidTech_Ventures\\My_products\\Al-Nukhwa\\AlNukhwa.Backend\\src\\Misan.Shared.Kernel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\110\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
