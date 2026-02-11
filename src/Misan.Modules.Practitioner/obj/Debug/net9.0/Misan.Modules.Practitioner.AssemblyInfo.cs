@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Misan.Modules.Practitioner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc91fac9fb712f7c62e84f26cb6093aeb9d94563")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4f75e9e12b7c8d947fa420af3bfea7bc666a9fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Misan.Modules.Practitioner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Misan.Modules.Practitioner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

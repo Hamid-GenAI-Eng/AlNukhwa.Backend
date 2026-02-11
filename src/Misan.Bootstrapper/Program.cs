@@ -52,8 +52,9 @@ builder.Configuration["CloudinarySettings:CloudName"] = GetConfig("CLOUDINARY_cl
 builder.Configuration["CloudinarySettings:ApiKey"] = GetConfig("CLOUDINARY_apikey", "CloudinarySettings:ApiKey");
 builder.Configuration["CloudinarySettings:ApiSecret"] = GetConfig("CLOUDINARY_apisecret", "CloudinarySettings:ApiSecret");
 
-// Map Email
-builder.Configuration["EmailSettings:Password"] = GetConfig("GOOGLE_SMTP_PASSWORD", "EmailSettings:Password");
+// Map Resend Email
+builder.Configuration["ResendSettings:ApiKey"] = GetConfig("RESEND_API_KEY", "ResendSettings:ApiKey");
+builder.Configuration["ResendSettings:FromEmail"] = GetConfig("RESEND_FROM_EMAIL", "ResendSettings:FromEmail");
 
 // Map PayFast (Future Proofing)
 builder.Configuration["PayFastSettings:MerchantId"] = GetConfig("PAYFAST_MERCHANT_ID", "PayFastSettings:MerchantId");

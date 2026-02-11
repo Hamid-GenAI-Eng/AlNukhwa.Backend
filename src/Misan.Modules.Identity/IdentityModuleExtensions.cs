@@ -20,10 +20,17 @@ public static class IdentityModuleExtensions
         services.AddValidatorsFromAssembly(typeof(IdentityModuleExtensions).Assembly);
 
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
-        services.Configure<EmailSettings>(configuration.GetSection(EmailSettings.SectionName));
+        // services.Configure<EmailSettings>(configuration.GetSection(EmailSettings.SectionName)); // Deprecated
+        services.Configure<ResendSettings>(configuration.GetSection(ResendSettings.SectionName));
 
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
-        services.AddScoped<IEmailService, SmtpEmailService>();
+        services.AddScoped<IEmailService, ResendEmailService>();
+        
+        services.AddHttpClient("Resend", client =>
+        {
+            var apiKey = configuration["ResendSettings:ApiKey"];
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", apiKey);
+        });
 
         return services;
     }
