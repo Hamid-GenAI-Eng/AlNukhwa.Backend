@@ -11,10 +11,56 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Misan.Modules.Identity.Infrastructure.Authentication;
+using Misan.Bootstrapper.Infrastructure.Database; // MigrationHelper
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Serilog
+// --- 1. Environment Variable Configuration Mapping ---
+// Helper to read Env Var or Config
+string? GetConfig(string envKey, string configKey) => 
+    Environment.GetEnvironmentVariable(envKey) ?? builder.Configuration[configKey];
+
+// Database URL Parsing (Render format: postgres://user:pass@host:port/db)
+var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+string connectionString = "";
+
+if (!string.IsNullOrEmpty(databaseUrl))
+{
+    try 
+    {
+        var uri = new Uri(databaseUrl);
+        var userInfo = uri.UserInfo.Split(':');
+        var port = uri.Port == -1 ? 5432 : uri.Port;
+        connectionString = $"Host={uri.Host};Port={port};Database={uri.AbsolutePath.TrimStart('/')};Username={userInfo[0]};Password={userInfo[1]};SSL Mode=Require;Trust Server Certificate=true";
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error parsing DATABASE_URL: {ex.Message}");
+        // Fallback or let it fail
+    }
+}
+else
+{
+    connectionString = builder.Configuration.GetConnectionString("Database")!;
+}
+
+// Inject Connection String into Configuration for Modules to pick up
+builder.Configuration["ConnectionStrings:Database"] = connectionString;
+
+// Map Cloudinary
+builder.Configuration["CloudinarySettings:CloudName"] = GetConfig("CLOUDINARY_cloudname", "CloudinarySettings:CloudName");
+builder.Configuration["CloudinarySettings:ApiKey"] = GetConfig("CLOUDINARY_apikey", "CloudinarySettings:ApiKey");
+builder.Configuration["CloudinarySettings:ApiSecret"] = GetConfig("CLOUDINARY_apisecret", "CloudinarySettings:ApiSecret");
+
+// Map Email
+builder.Configuration["EmailSettings:Password"] = GetConfig("GOOGLE_SMTP_PASSWORD", "EmailSettings:Password");
+
+// Map PayFast (Future Proofing)
+builder.Configuration["PayFastSettings:MerchantId"] = GetConfig("PAYFAST_MERCHANT_ID", "PayFastSettings:MerchantId");
+builder.Configuration["PayFastSettings:SecurePass"] = GetConfig("PAYFAST_SECURE_PASS", "PayFastSettings:SecurePass");
+
+
+// --- Serilog ---
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
@@ -23,16 +69,18 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-// Add services
+// --- Services ---
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHealthChecks(); // Health Check
 
 // Global Exception Handler
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 
-// Modules
+// --- Modules ---
+// Pass the updated configuration
 builder.Services.AddIdentityModule(builder.Configuration);
 builder.Services.AddProfilesModule(builder.Configuration);
 builder.Services.AddPractitionerModule(builder.Configuration);
@@ -40,23 +88,30 @@ builder.Services.AddClinicalModule(builder.Configuration);
 builder.Services.AddStoreModule(builder.Configuration);
 builder.Services.AddIntelligenceModule(builder.Configuration);
 
+// --- CORS ---
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
-        builder => builder
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
+        policy => {
+            var frontendUrl = Environment.GetEnvironmentVariable("FRONTEND_URL") ?? "http://localhost:3000";
+            policy.WithOrigins(frontendUrl, "http://localhost:3000", "https://al-nukhwa-frontend.vercel.app") // Add generic Vercel fallback
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                  .AllowCredentials();
+        });
 
+    // SignalR specific policy if needed, or merge with above
     options.AddPolicy("SignalRPolicy",
-        builder => builder
-            .WithOrigins("http://localhost:3000")
-            .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowCredentials());
+        policy => {
+             var frontendUrl = Environment.GetEnvironmentVariable("FRONTEND_URL") ?? "http://localhost:3000";
+             policy.WithOrigins(frontendUrl, "http://localhost:3000")
+             .AllowAnyMethod()
+             .AllowAnyHeader()
+             .AllowCredentials();
+        });
 });
 
-// Auth
+// --- Auth ---
 var jwtSettings = builder.Configuration.GetSection(JwtSettings.SectionName).Get<JwtSettings>()!;
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -75,7 +130,18 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
-// Middleware
+// --- 2. Automatic Migrations ---
+// Run migrations within a scope
+using (var scope = app.Services.CreateScope())
+{
+    // Check if we should skip migrations (optional flag)
+    if (Environment.GetEnvironmentVariable("SKIP_MIGRATIONS") != "true")
+    {
+        await MigrationHelper.ApplyMigrationsAsync(scope.ServiceProvider);
+    }
+}
+
+// --- Middleware ---
 app.UseExceptionHandler();
 
 // Use Serilog Request Logging
@@ -89,8 +155,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// CORS - Must be before Auth
+app.UseCors("AllowAll");
+
 app.UseAuthentication();
 app.UseAuthorization();
+
+// Health Check Endpoint
+app.MapHealthChecks("/health");
 
 app.MapControllers();
 app.MapHub<Misan.Modules.Intelligence.Infrastructure.SignalR.ChatHub>("/ws/messages").RequireCors("SignalRPolicy");

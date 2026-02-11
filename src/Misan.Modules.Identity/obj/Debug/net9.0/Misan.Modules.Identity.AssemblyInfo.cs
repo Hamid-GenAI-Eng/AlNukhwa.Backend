@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Misan.Modules.Identity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ca1671682e81316f7bce5bacfae18662aa73b18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc91fac9fb712f7c62e84f26cb6093aeb9d94563")]
 [assembly: System.Reflection.AssemblyProductAttribute("Misan.Modules.Identity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Misan.Modules.Identity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
