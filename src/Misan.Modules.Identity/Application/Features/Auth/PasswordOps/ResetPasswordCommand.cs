@@ -17,7 +17,7 @@ public class ResetPasswordValidator : AbstractValidator<ResetPasswordCommand>
     public ResetPasswordValidator()
     {
         RuleFor(x => x.Email).NotEmpty().EmailAddress();
-        RuleFor(x => x.Otp).NotEmpty().Length(6);
+        RuleFor(x => x.Otp).NotEmpty(); // GUID or 6-digit code
         RuleFor(x => x.NewPassword).NotEmpty().MinimumLength(8);
     }
 }

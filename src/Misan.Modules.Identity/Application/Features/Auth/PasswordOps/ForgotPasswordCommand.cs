@@ -1,6 +1,7 @@
 using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Misan.Modules.Identity.Application.Services;
 using Misan.Modules.Identity.Domain.Entities;
 using Misan.Modules.Identity.Infrastructure.Database;
@@ -25,11 +26,13 @@ public class ForgotPasswordCommandHandler : IRequestHandler<ForgotPasswordComman
 {
     private readonly IdentityDbContext _dbContext;
     private readonly IEmailService _emailService;
+    private readonly IConfiguration _configuration;
 
-    public ForgotPasswordCommandHandler(IdentityDbContext dbContext, IEmailService emailService)
+    public ForgotPasswordCommandHandler(IdentityDbContext dbContext, IEmailService emailService, IConfiguration configuration)
     {
         _dbContext = dbContext;
         _emailService = emailService;
+        _configuration = configuration;
     }
 
     public async Task<Result> Handle(ForgotPasswordCommand request, CancellationToken cancellationToken)
@@ -40,13 +43,28 @@ public class ForgotPasswordCommandHandler : IRequestHandler<ForgotPasswordComman
             return Result.Success();
         }
 
-        var otpCode = new Random().Next(100000, 999999).ToString();
-        var otpToken = OTPToken.Create(user.Id, otpCode, "PasswordReset", TimeSpan.FromMinutes(15));
+        // Generate Secure Token (GUID) instead of 6-digit OTP
+        var token = Guid.NewGuid().ToString();
+        var otpToken = OTPToken.Create(user.Id, token, "PasswordReset", TimeSpan.FromMinutes(15));
 
         _dbContext.OTPTokens.Add(otpToken);
         await _dbContext.SaveChangesAsync(cancellationToken);
 
-        await _emailService.SendEmailAsync(user.Email, "Reset Password", $"Your password reset code is: {otpCode}");
+        // Construct Link
+        var frontendUrl = _configuration["FRONTEND_URL"] ?? "http://localhost:3000";
+        // Ensure not trailing slash if needed, but modern browsers handle it. 
+        // frontendUrl/reset-password?email=...&token=...
+        var resetLink = $"{frontendUrl}/reset-password?email={Uri.EscapeDataString(user.Email)}&token={token}";
+
+        var emailBody = $@"
+            <h2>Reset Password Request</h2>
+            <p>You have requested to reset your password. Click the link below to verify your identity and set a new password:</p>
+            <p><a href='{resetLink}'>Reset Password</a></p>
+            <p>If you did not request this, please ignore this email.</p>
+            <p>This link expires in 15 minutes.</p>
+        ";
+
+        await _emailService.SendEmailAsync(user.Email, "Reset Your Password - Al-Nukhwa", emailBody);
 
         return Result.Success();
     }

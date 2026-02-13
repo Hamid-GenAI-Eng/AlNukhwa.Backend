@@ -70,4 +70,24 @@ public sealed class Clinic : Entity
         // Simple add, real logic might replace existing day
         _schedules.Add(new ClinicSchedule(Guid.NewGuid(), Id, day, morningStart, morningEnd, afternoonStart, afternoonEnd, isClosed));
     }
+    public void UpdateDetails(string name, string address, string city, string mapCoordinates, string phone)
+    {
+        Name = name;
+        Address = address;
+        City = city;
+        Phone = phone;
+        
+        // Parse "lat,lng" if possible, or keep separate. 
+        // Command sends "MapCoordinates" string "lat,lng".
+        // Entity has MapLat, MapLng doubles.
+        if (!string.IsNullOrEmpty(mapCoordinates) && mapCoordinates.Contains(","))
+        {
+            var parts = mapCoordinates.Split(',');
+            if (parts.Length == 2 && double.TryParse(parts[0], out var lat) && double.TryParse(parts[1], out var lng))
+            {
+                MapLat = lat;
+                MapLng = lng;
+            }
+        }
+    }
 }

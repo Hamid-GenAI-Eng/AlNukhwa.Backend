@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Misan.Shared.Kernel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4f75e9e12b7c8d947fa420af3bfea7bc666a9fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3d21a3fe47f09eebaf5fe7ec50b4dd08b9f7b8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Misan.Shared.Kernel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Misan.Shared.Kernel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
