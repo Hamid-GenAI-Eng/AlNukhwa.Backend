@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Misan.Modules.Clinical")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b77da9815ce6aee99f519a56530cd71198f867dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+855ea139935db4b31ce21276e0be1732e4e9fcad")]
 [assembly: System.Reflection.AssemblyProductAttribute("Misan.Modules.Clinical")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Misan.Modules.Clinical")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
