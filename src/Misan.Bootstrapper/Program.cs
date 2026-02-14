@@ -21,10 +21,11 @@ string? GetConfig(string envKey, string configKey) =>
     Environment.GetEnvironmentVariable(envKey) ?? builder.Configuration[configKey];
 
 // Database URL Parsing (Render format: postgres://user:pass@host:port/db)
-var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+// Database URL Parsing
+var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL") ?? builder.Configuration.GetConnectionString("Database");
 string connectionString = "";
 
-if (!string.IsNullOrEmpty(databaseUrl))
+if (!string.IsNullOrEmpty(databaseUrl) && (databaseUrl.StartsWith("postgres://") || databaseUrl.StartsWith("postgresql://")))
 {
     try 
     {
@@ -35,13 +36,14 @@ if (!string.IsNullOrEmpty(databaseUrl))
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"Error parsing DATABASE_URL: {ex.Message}");
+        Console.WriteLine($"Error parsing Database URI: {ex.Message}");
         // Fallback or let it fail
+        connectionString = databaseUrl; // Attempt to use as-is if parsing fails
     }
 }
 else
 {
-    connectionString = builder.Configuration.GetConnectionString("Database")!;
+    connectionString = databaseUrl ?? "";
 }
 
 // Inject Connection String into Configuration for Modules to pick up

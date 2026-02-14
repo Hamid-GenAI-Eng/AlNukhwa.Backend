@@ -1601,6 +1601,7 @@
       },
       "Misan.Modules.Practitioner/1.0.0": {
         "dependencies": {
+          "CloudinaryDotNet": "1.28.0",
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Misan.Shared.Kernel": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.3"

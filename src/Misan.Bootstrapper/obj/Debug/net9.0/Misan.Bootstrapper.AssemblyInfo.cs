@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Misan.Bootstrapper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4f75e9e12b7c8d947fa420af3bfea7bc666a9fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f961cac4d4ef39b12700aee9b5f7da8658a80075")]
 [assembly: System.Reflection.AssemblyProductAttribute("Misan.Bootstrapper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Misan.Bootstrapper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

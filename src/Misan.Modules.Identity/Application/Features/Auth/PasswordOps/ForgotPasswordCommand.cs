@@ -2,6 +2,7 @@ using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Misan.Modules.Identity.Application.Services;
 using Misan.Modules.Identity.Domain.Entities;
 using Misan.Modules.Identity.Infrastructure.Database;
@@ -27,21 +28,28 @@ public class ForgotPasswordCommandHandler : IRequestHandler<ForgotPasswordComman
     private readonly IdentityDbContext _dbContext;
     private readonly IEmailService _emailService;
     private readonly IConfiguration _configuration;
+    private readonly ILogger<ForgotPasswordCommandHandler> _logger;
 
-    public ForgotPasswordCommandHandler(IdentityDbContext dbContext, IEmailService emailService, IConfiguration configuration)
+    public ForgotPasswordCommandHandler(IdentityDbContext dbContext, IEmailService emailService, IConfiguration configuration, ILogger<ForgotPasswordCommandHandler> logger)
     {
         _dbContext = dbContext;
         _emailService = emailService;
         _configuration = configuration;
+        _logger = logger;
     }
 
     public async Task<Result> Handle(ForgotPasswordCommand request, CancellationToken cancellationToken)
     {
+        _logger.LogInformation("Processing Forgot Password request for: {Email}", request.Email);
+        
         var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == request.Email, cancellationToken);
         if (user is null)
         {
+            _logger.LogWarning("User not found for email: {Email}. Returning success to prevent enumeration.", request.Email);
             return Result.Success();
         }
+
+        _logger.LogInformation("User found. Generating secure token for: {UserId}", user.Id);
 
         // Generate Secure Token (GUID) instead of 6-digit OTP
         var token = Guid.NewGuid().ToString();
